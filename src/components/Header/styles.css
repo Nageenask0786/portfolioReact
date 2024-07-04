@@ -82,5 +82,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: #051622;
+      z-index : 1;
+
     }
   }
