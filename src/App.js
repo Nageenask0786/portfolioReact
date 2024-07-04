@@ -33,7 +33,7 @@ const App = () => {
       <About />
       <Portfolio />
       <Certificates />
-      <Footer />
+      <Footer name = {siteProps.name}/>
     </div>
   );
 };

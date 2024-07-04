@@ -1,3 +1,7 @@
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin,Fagithub } from "react-icons/fa";
+
+
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -33,10 +37,13 @@ const Footer = (props) => {
       >
         {email && (
           <a href={`mailto:${email}`}>
+          <MdEmail size={30} color="#ffffff" />
           </a>
         )}
         {gitHub && (
           <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
+          <Fagithub size={30} color="#ffffff" />
+
           </a>
         )}
         {linkedIn && (
@@ -45,6 +52,8 @@ const Footer = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
+                    <FaLinkedin size={30} color="#ffffff" />
+
           </a>
         )}
       </div>
