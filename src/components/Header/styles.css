@@ -6,6 +6,7 @@
   
   nav {
     display: flex;
+    flex-direction: column;
     background-color: #051622;
     color: #ffffff;
    height: 60px;
