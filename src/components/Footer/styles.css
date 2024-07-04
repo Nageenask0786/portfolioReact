@@ -1,24 +1,40 @@
+/* styles.css */
+
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-.email:hover {
-   box-shadow: 10px 10px 10px 10px #0ef;
-}
-
-
-.linkedin:hover {
-    box-shadow: 10px 10px 10px 10px #0ef;
-}
-
-
-.git:hover {
-    box-shadow: 50px 10px 10px 10px #0ef;
-
-}
-
-.socialIcon {
-    scale: 0.5;
-}
+  }
+  
+  #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 3rem 0;
+    background-color: #082030;
+    width: 100%;
+    color: #ffffff;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  
+  .footer-links a {
+    color: red;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    box-shadow: 0 0 10px #0ef;
+  }
+  
+  
+  .footer-text {
+    margin-top: 0;
+    color: white;
+  }
+  

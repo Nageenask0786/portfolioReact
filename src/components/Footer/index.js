@@ -1,74 +1,47 @@
 import { MdEmail } from "react-icons/md";
-import { FaLinkedin,Fagithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 
+import './styles.css';
 
 import React from "react";
 import PropTypes from "prop-types";
 
-/**
- * 💡 Learning resources
- *
- *  HTML hyperlinks: https://www.w3schools.com/html/html_links.asp
- *  Opening links in new tabs: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
- */
-
 const Footer = (props) => {
-  const { email, gitHub, linkedIn, name} = props;
+  const { email, gitHub, linkedIn, name } = props;
 
   return (
-    <div
-      id="footer"
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: "2.5rem",
-        padding: "3rem 0 3rem",
-        backgroundColor: "#082030",
-        width: "100vw",
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "2.5rem",
-        }}
-      >
+    <sectio id="footer">
+      <div className="footer-links">
         {email && (
-          <a href={`mailto:${email}`}>
-          <MdEmail size={30} color="#ffffff" />
+          <a href={`mainlto:${email}`} className="socialIcon">
+            <MdEmail size={30} />
+            linkedIn
           </a>
         )}
         {gitHub && (
-          <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
-          <Fagithub size={30} color="#ffffff" />
-
+          <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer" className="socialIcon">
+            <FaGithub size={30} />
           </a>
         )}
         {linkedIn && (
-          <a
-            href={`https://www.linkedin.com/in/${linkedIn}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-                    <FaLinkedin size={30} color="#ffffff" />
-
+          <a href={`https://www.linkedin.com/in/${linkedIn}`} target="_blank" rel="noopener noreferrer" className="socialIcon">
+            <FaLinkedin size={30} />
           </a>
         )}
       </div>
-      <p className="small" style={{ marginTop: 0, color: "white" }}>
+      <p className="footer-text">
         Created by {name}
       </p>
-    </div>
+    </sectio>
   );
 };
-
 
 Footer.propTypes = {
   email: PropTypes.string,
   gitHub: PropTypes.string,
   linkedIn: PropTypes.string,
+  name: PropTypes.string.isRequired,
 };
 
 export default Footer;

@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
 import Certificates from "./components/Certificates";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"
 import "./App.css";
 
 /**
