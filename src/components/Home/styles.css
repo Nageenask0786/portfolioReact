@@ -94,6 +94,8 @@ margin-top: 60px;
     }
   
     .grid-item {
+        display :flex;
+        text-align :center;
       align-items: center;
     }
   
