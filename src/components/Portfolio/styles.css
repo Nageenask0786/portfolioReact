@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-color: #05131c;
+   
+  }
+  
+  .projects-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    margin-top: 60px;
+  }
+  
+  .project-item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 280px;
+    height: 270px;
+    overflow: hidden;
+    cursor:pointer;
+    border: 3px solid #0ef;
+    margin: 10px;
+    border-radius: 8px;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 8px;
+  }
+  
+  .project-details {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to top, #ff6ec4,#00d2ff,orange 100%);
+    font-weight: 1000;
+    padding-top: 30px;
+    opacity: 0;
+    background-size: cover;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .project-details:hover {
+    opacity: 0.8;
+  }
+  
+  .project-name {
+    color: white;
+    font-weight: bold;
+    font-family: "Nunito";
+    font-size: 27px;
+  }
+  
+  .project-description {
+    font-size : 17px;
+    font-family: "Nunito";
+  }
+  
+  .visit-btn {
+      height : 40px;
+      width : 40px;
+      border-radius: 50%;
+      border: 0px;
+      cursor: pointer;
+      background-color: transparent;
+  }
+  
+  
+  /* @media screen and (max-width :768px) {
+    .project-item {
+      width: 80%;
+    }
+    
+  } */

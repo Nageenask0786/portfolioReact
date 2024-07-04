@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: #ffffff;
+
+}
+
+.about {
+      background-image: url("https://res.cloudinary.com/dchxbofyt/image/upload/v1720009685/futuristic-background-design_23-2148503793_hfjulw.avif");
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.about-content {
+    width: 60%;
+    padding: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+    border: 16px solid #ffffff;
+    height: 80%;
+    animation: slide .9s infinite;
+    margin-top: 60px;
+
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  
+  p.large {
+    font-size: 18px;
+  }
+  
+  p.small {
+    font-size: 15px;
+  }
+  
+  hr {
+    margin: 1.5rem;
+  }
+
+  .image {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 8px solid #0ef;
+  }
+
+  grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    min-width: 80%;
+    grid-gap: 15px;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width : 900px) {
+    .about-content {
+        width: 90%;
+    }
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  

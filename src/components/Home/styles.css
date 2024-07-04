@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .home {
+    background-color: #05131c;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-top: 60px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    min-width: 80%;
+    grid-gap: 15px;
+    animation : slideBottom .3s 1;
+  }
+  
+  .profile {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 8px solid #0ef;
+    animation: fadeIn .3s infinite;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  
+  h1 {
+    font-family: "Nunito";
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 50px;
+  }
+  
+  .title {
+    font-family: "Nunito";
+    color: #ffffff;
+    margin: 10px 0px;
+    padding: 0px;
+    font-size: 35px;
+  }
+  
+  .btn {
+    background-color: #0ef;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #081b29;
+    border: 0px;
+    letter-spacing: 1px;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-family: "Nunito";
+    color: #ffffff;
+    padding: 10px;
+  }
+  .btn:hover {
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef, 0 0 50px #0ef, 0 0 100px #0ef;
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 100%;
+      min-width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile {
+      height: 250px;
+      width: 250px;
+    }
+  
+    .grid-item {
+      align-items: center;
+    }
+  
+    .grid-item-1 {
+      order: 1;
+    }
+    .grid-item-2 {
+      order: 2;
+    }
+    .description {
+      text-align: center;
+    }
+  
+    .home {
+      min-height: 60vh;
+    }
+  }
+  @keyframes slideBottom {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

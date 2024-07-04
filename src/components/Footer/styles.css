@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.email:hover {
+   box-shadow: 10px 10px 10px 10px #0ef;
+}
+
+
+.linkedin:hover {
+    box-shadow: 10px 10px 10px 10px #0ef;
+}
+
+
+.git:hover {
+    box-shadow: 50px 10px 10px 10px #0ef;
+
+}
+
+.socialIcon {
+    scale: 0.5;
+}
