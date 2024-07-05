@@ -11,7 +11,7 @@ const Footer = (props) => {
   const { email, gitHub, linkedIn, name } = props;
 
   return (
-    <sectio id="footer">
+    <section id="footer">
       <div className="footer-links">
         {email && (
           <a href={`mainlto:${email}`} className="socialIcon">
@@ -33,7 +33,7 @@ const Footer = (props) => {
       <p className="footer-text">
         Created by {name}
       </p>
-    </sectio>
+    </section>
   );
 };
 

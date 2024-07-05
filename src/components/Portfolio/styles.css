@@ -26,12 +26,13 @@
   }
   
   .project-item {
+    cursor: pointer;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 270px;
-    height: 270px;
+    width: 260px;
+    height: 260px;
     overflow: hidden;
     cursor:pointer;
     border: 3px solid #0ef;
@@ -44,7 +45,9 @@
     height: 100%;
     position: absolute;
     border-radius: 8px;
-  }
+    top: 0;
+    left: 0;
+    }
   
   .project-details {
     height: 100%;
@@ -52,14 +55,14 @@
     text-align: center;
     background-image: linear-gradient(to top, #ff6ec4,#00d2ff,orange 100%);
     font-weight: 1000;
-    padding-top: 30px;
+    padding-top: 20px;
     opacity: 0;
     background-size: cover;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    margin: 0px;
   }
   
   a {
