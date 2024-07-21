@@ -33,7 +33,7 @@ const App = () => {
       <About />
       <Portfolio />
       <Certificates />
-      <Footer name = {siteProps.name}/>
+      <Footer name = {siteProps.name} email ={siteProps.email} gitHub ={siteProps.gitHub} linkedIn ={siteProps.linkedIn}/>
     </div>
   );
 };
