@@ -16,7 +16,6 @@ const Footer = (props) => {
         {email && (
           <a href={`mainlto:${email}`} className="socialIcon">
             <MdEmail size={30} />
-            linkedIn
           </a>
         )}
         {gitHub && (
